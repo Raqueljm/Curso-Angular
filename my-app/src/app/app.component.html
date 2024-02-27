@@ -1,0 +1,14 @@
+<div> Pintamos user si existe</div>
+@if (user){
+    <div>{{user}}</div>
+}@else{
+  <div>No existe</div>
+}
+
+@for (v of array; track v){
+  <div>{{v}}</div>
+}
+
+<button (click)="handlerClick($event)">Haz click</button>
+
+<app-grid></app-grid>
